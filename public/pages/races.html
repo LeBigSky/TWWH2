@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/style.css">
     <title>TWWH2</title>
 </head>
 
@@ -17,34 +17,155 @@
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img class="nav-logo" src="/public/img/logo1.png" alt="logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="news.html">News</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/public/pages/carte.html">Carte</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/public/pages/races.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Les Races
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="races.html#nains">Nains</a></li>
-                      <li><a class="dropdown-item" href="races.html#sigmar">Sigmar</a></li>
-                      <li><a class="dropdown-item" href="races.html#orques">Orques</a></li>
+                <a class="navbar-brand" href="index.html"><img class="nav-logo" src="/public/img/logo1.png"
+                        alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html#carte">Carte</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/public/pages/races.html"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Les Races
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="races.html#nains">Nains</a></li>
+                                <li><a class="dropdown-item" href="races.html#sigmar">Sigmar</a></li>
+                                <li><a class="dropdown-item" href="races.html#orques">Orques</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                  </li>
-                </ul>
-              </div>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <!--_______________ END OF NAVBAR _________ -->
+    <section>
+        <!-- Carousel -->
+        <div class="container-flex"></div>
+        <div id="carouselExampleLight" class="carousel carousel-light slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="/public/img/dwarf.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>LES NAINS</h5>
+                        <p>Une races de guerriers béliqueux.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <br>
+    <section>
+        <!--section card-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>LES NAINS, UNE RACE BELIQUEUSE</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate enim quasi reprehenderit numquam commodi sapiente hic debitis voluptatem, 
+                        quibusdam molestias, deserunt aut nulla nesciunt maxime quas praesentium illum iste deleniti.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate enim quasi reprehenderit numquam commodi sapiente hic debitis voluptatem, 
+                        quibusdam molestias, deserunt aut nulla nesciunt maxime quas praesentium illum iste deleniti.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate enim quasi reprehenderit numquam commodi sapiente hic debitis voluptatem, 
+                        quibusdam molestias, deserunt aut nulla nesciunt maxime quas praesentium illum iste deleniti.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate enim quasi reprehenderit numquam commodi sapiente hic debitis voluptatem, 
+                        quibusdam molestias, deserunt aut nulla nesciunt maxime quas praesentium illum iste deleniti.Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="/public/img/dwarf2.jpg" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title">LES NAINS</h5>
+                            </div>
+                          </div>
+                    </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="/public/img/sigmar2.jpg" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title">HUMAINS</h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <h2>LES HUMAINS DE SIGMAR</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate enim quasi reprehenderit numquam commodi sapiente hic debitis voluptatem, 
+                            quibusdam molestias, deserunt aut nulla nesciunt maxime quas praesentium illum iste deleniti.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate enim quasi reprehenderit numquam commodi sapiente hic debitis voluptatem, 
+                            quibusdam molestias, deserunt aut nulla nesciunt maxime quas praesentium illum iste deleniti.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate enim quasi reprehenderit numquam commodi sapiente hic debitis voluptatem, 
+                            quibusdam molestias, deserunt aut nulla nesciunt maxime quas praesentium illum iste deleniti.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate enim quasi reprehenderit numquam commodi sapiente hic debitis voluptatem, 
+                            quibusdam molestias, deserunt aut nulla nesciunt maxime quas praesentium illum iste deleniti.</p>
+                        </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>LES ORQUES OU L'ART DE LA WAAGH!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate enim quasi reprehenderit numquam commodi sapiente hic debitis voluptatem, 
+                        quibusdam molestias, deserunt aut nulla nesciunt maxime quas praesentium illum iste deleniti.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate enim quasi reprehenderit numquam commodi sapiente hic debitis voluptatem, 
+                        quibusdam molestias, deserunt aut nulla nesciunt maxime quas praesentium illum iste deleniti.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate enim quasi reprehenderit numquam commodi sapiente hic debitis voluptatem, 
+                        quibusdam molestias, deserunt aut nulla nesciunt maxime quas praesentium illum iste deleniti.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate enim quasi reprehenderit numquam commodi sapiente hic debitis voluptatem, 
+                        quibusdam molestias, deserunt aut nulla nesciunt maxime quas praesentium illum iste deleniti.Lorem ipsum .</p>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-dark text-white">
+                            <img src="/public/img/orc.png" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title">Orques</h5>
+                            </div>
+                          </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- ||||||||||||| SCRIPT ZONE |||||||||||||-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
@@ -66,13 +187,14 @@
                         <a href="races.html#sigmar">Sigmar</a>
                         <a href="races.html#orques">Orques</a>
                     </div>
-                    
+
                     <div class="footer-titre footer-3">
                         <h2>Nous suivre</h2>
                         <a href="https://www.facebook.com" target="_blank">Facebook</a>
                         <a href="https://www.instagram.com/?hl=fr" target="_blank">Instagram</a>
                         <a href="https://www.youtube.com" target="_blank">Youtube</a>
-                        <a href="https://store.steampowered.com/app/594570/Total_War_WARHAMMER_II" target="_blank">Steam</a>
+                        <a href="https://store.steampowered.com/app/594570/Total_War_WARHAMMER_II"
+                            target="_blank">Steam</a>
                         <a href="https://www.totalwar.com" target="_blank">Sega</a>
                     </div>
                     <div class="footer-email-form">
@@ -81,9 +203,8 @@
                         <input type="submit" value="S'inscrire" id="footer-email-btn">
                     </div>
                 </div>
-                <P>TOTALWAR WARHAMMER 2 A BINOME PROJECT FOR: <a
-                        href="https://molengeek.com">MOLENGEEK</a></P>
-                        <p>Proudly made by Yves & Gary</p>
+                <P>TOTALWAR WARHAMMER 2 A BINOME PROJECT FOR: <a href="https://molengeek.com">MOLENGEEK</a></P>
+                <p>Proudly made by Yves & Gary</p>
             </div>
         </div>
     </footer>
